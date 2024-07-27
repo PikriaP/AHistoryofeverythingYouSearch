@@ -1,0 +1,65 @@
+:root{
+   --StrongCyan: hsl(171, 66%, 44%);
+   --LightBlue: hsl(233, 100%, 69%);
+   --white: #fff;
+   --DarkGrayishBlue: hsl(210, 10%, 33%);
+   --GrayishBlue: hsl(201, 11%, 66%);
+   --fontColor: #fff;
+
+}
+.div-nav {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent 70%;
+  /* padding: 20px; */
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  list-style: none;
+}
+.nav-li {
+  padding: 35px;
+}
+.section1-cont {
+    height: 500px;
+    width: 100vw;
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 115px;
+}
+.section1-cont img {
+    padding-top: 150px;
+}
+.btn {
+    height: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+button {
+    background-color: var(--StrongCyan);
+    color: var(--fontColor);
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    
+
+}
+.btn button:nth-of-type(2) {
+    background-color: var(--LightBlue);
+}
