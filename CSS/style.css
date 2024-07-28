@@ -116,7 +116,7 @@ color: var(--DarkGrayishBlue);
   margin-top: 50px;
 }
 .wrapper-div {
-  width: 80%;
+  max-width: 80%;
   display: flex;
   justify-content: baseline;
   flex-wrap: wrap;
@@ -127,18 +127,20 @@ color: var(--DarkGrayishBlue);
 }
 
 .monitor {
+  width: 762px;
+  height: 582px;
   background-image: url(../images/image-computer.png);
   background-repeat: no-repeat;
   background-size:cover;
-  width: 762px;
-  height: 582px;
-  transform: translateX(-200px);
-  /* overflow: hidden; */
+  
+  margin-left: -450px;
+  overflow: hidden;
 }
 aside {
   width: 400px;
   height: 582px;
   text-align: left;
+  margin-left: 80px;
   }
 aside h3 {
   font-size: 22px;
