@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap");
 
-:root{
-   --StrongCyan: hsl(171, 66%, 44%);
-   --LightBlue: hsl(233, 100%, 69%);
-   --white: #fff;
-   --DarkGrayishBlue: hsl(210, 10%, 33%);
-   --GrayishBlue: hsl(201, 11%, 66%);
-   --fontColor: #fff;
-
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --white: #fff;
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --GrayishBlue: hsl(201, 11%, 66%);
+  --fontColor: #fff;
 }
 .div-nav {
   background-color: var(--white);
@@ -16,28 +15,33 @@
   align-items: center;
   background-color: transparent 70%;
   /* padding: 20px; */
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 100;
 }
 .mainlogo {
-    margin: 5px;
+  margin: 5px;
 }
-p{
-    font-family: "Bai Jamjuree", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: var(--GrayishBlue);
+p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: var(--GrayishBlue);
+  line-height: 1.8;
 }
-h1{
+h1 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 40px;
   margin-bottom: 30px;
   color: var(--DarkGrayishBlue);
-  
 }
 .nav-wrapper {
   display: flex;
@@ -47,52 +51,93 @@ h1{
   padding: 35px;
 }
 .section1-cont {
-    height: 500px;
-    width: 100vw;
-    background-image: url(../images/bg-header-desktop.png);
-    background-repeat: no-repeat;
-    display: flex;
-    background-size: cover;
-    align-items: center;
-    /* justify-content: center; */
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 115px;
-    margin-bottom:  100px;
-
+  height: 500px;
+  width: 100vw;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 115px;
+  margin-bottom: 100px;
 }
 .section1-cont img {
-    padding: 150px 0px 70px;
+  padding: 150px 0px 70px;
 }
 .section1-cont p {
-    text-align: center;
+  text-align: center;
 }
 .btn {
-    height: 50px;
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
-
+  height: 50px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
 }
 button {
-    background-color: var(--StrongCyan);
-    color: var(--fontColor);
-    width: 160px;
-    height: 40px;
-    border-radius: 25px;
-    border: none;
-    padding: 10px;
-    font-family: "Bai Jamjuree", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    
-
+  background-color: var(--StrongCyan);
+  color: var(--fontColor);
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 }
 .btn button:nth-of-type(2) {
-    background-color: var(--LightBlue);
+  background-color: var(--LightBlue);
 }
-.section2-div{
+.section2-div {
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
+  margin: 0 auto;
+  margin-top: 115px;
+  margin-bottom: 100px;
+}
+h2,
+h3 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.wrapper-div {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 115px;
+  margin-bottom: 100px;
+}
 
+.monitor {
+  background-image: url(../images/image-computer.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 762px;
+  height: 582px;
+  transform: translateX(-300px);
+  /* overflow: hidden; */
+}
+aside {
+  width: 400px;
+  height: 600px;
+  text-align: left;
+}
+aside h3 {
+  font-size: 20px;
 }
