@@ -7,8 +7,10 @@
   --DarkGrayishBlue: hsl(210, 10%, 33%);
   --GrayishBlue: hsl(201, 11%, 66%);
   --fontColor: #fff;
+  --footerColor: lightgray;
 }
 .div-nav {
+  cursor: pointer;
   background-color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -23,6 +25,12 @@
   width: 100vw;
   top: 0;
   z-index: 100;
+}
+li:hover{
+  color: var(--StrongCyan) ;
+  text-decoration: underline;
+  transition: ease-in-out;
+  transition-delay: 0.2s;
 }
 .mainlogo {
   margin: 5px;
@@ -78,6 +86,7 @@ h1 {
   margin: 30px;
 }
 button {
+  cursor: pointer;
   background-color: var(--StrongCyan);
   color: var(--fontColor);
   width: 160px;
@@ -171,6 +180,7 @@ aside h3 {
 
 }
 .icon-box-cont{
+  cursor:pointer;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -196,5 +206,40 @@ aside h3 {
   margin: 0 auto;
   text-align: center;
 }
+.footer-cont{
+  max-width: 100%;
+  height: 300px;
+  background-color: var(--footerColo);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.social-icons{
+  cursor: pointer;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: xx-large;
+  color: var(--DarkGrayishBlue);
+}
+.fa:hover {
+  opacity: 0.7;
+  
+}
+.fa {
+  font-size: 40px;
+  font-weight: 600;
+}
+button:hover{
+  pointer-events: all;
+  opacity: 0.7;
+  
+}
+
 
 
